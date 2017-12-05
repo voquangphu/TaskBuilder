@@ -9,3 +9,9 @@ A framework for building complex programs based upon more simple well-defined on
 ## Language
 - Java
 - bash
+
+## Usage
+- Install bash, Java Runtime Environment (JRE), any compilers, libraries necessary for compiling and running code in command line interface.
+- Download binary file https://github.com/voquangphu/TaskBuilder/blob/master/directory/TaskBuilder.jar
+- Setup development enviroment (see below).
+- Start using by providing simple programs, task building rules, task parameters... (more below).
