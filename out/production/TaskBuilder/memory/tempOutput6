@@ -1,0 +1,95 @@
+http://api.wunderground.com/api/eba177785a6227c7/conditions/q/VN/Ho%20Chi%20Minh%20City.json
+
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "conditions": 1
+  }
+	}
+  ,	"current_observation": {
+		"image": {
+		"url":"http://icons.wxug.com/graphics/wu2/logo_130x80.png",
+		"title":"Weather Underground",
+		"link":"http://www.wunderground.com"
+		},
+		"display_location": {
+		"full":"Ho Chi Minh City, Viet Nam",
+		"city":"Ho Chi Minh City",
+		"state":"",
+		"state_name":"Viet Nam",
+		"country":"VS",
+		"country_iso3166":"VN",
+		"zip":"00000",
+		"magic":"116",
+		"wmo":"48900",
+		"latitude":"10.77999973",
+		"longitude":"106.69000244",
+		"elevation":"7.0"
+		},
+		"observation_location": {
+		"full":"Ho Chi Minh, Binh Hoa Xa, 65",
+		"city":"Ho Chi Minh, Binh Hoa Xa",
+		"state":"65",
+		"country":"VS",
+		"country_iso3166":"VN",
+		"latitude":"10.820744",
+		"longitude":"106.678703",
+		"elevation":"45 ft"
+		},
+		"estimated": {
+		},
+		"station_id":"I65BINHH2",
+		"observation_time":"Last Updated on November 20, 1:18 PM +07",
+		"observation_time_rfc822":"Mon, 20 Nov 2017 13:18:19 +0700",
+		"observation_epoch":"1511158699",
+		"local_time_rfc822":"Mon, 20 Nov 2017 13:28:47 +0700",
+		"local_epoch":"1511159327",
+		"local_tz_short":"+07",
+		"local_tz_long":"Asia/Ho_Chi_Minh",
+		"local_tz_offset":"+0700",
+		"weather":"Mostly Cloudy",
+		"temperature_string":"86.9 F (30.5 C)",
+		"temp_f":86.9,
+		"temp_c":30.5,
+		"relative_humidity":"74%",
+		"wind_string":"From the SW at 9.9 MPH Gusting to 16.2 MPH",
+		"wind_dir":"SW",
+		"wind_degrees":227,
+		"wind_mph":9.9,
+		"wind_gust_mph":"16.2",
+		"wind_kph":15.9,
+		"wind_gust_kph":"26.1",
+		"pressure_mb":"1008",
+		"pressure_in":"29.77",
+		"pressure_trend":"-",
+		"dewpoint_string":"78 F (25 C)",
+		"dewpoint_f":78,
+		"dewpoint_c":25,
+		"heat_index_string":"99 F (37 C)",
+		"heat_index_f":99,
+		"heat_index_c":37,
+		"windchill_string":"NA",
+		"windchill_f":"NA",
+		"windchill_c":"NA",
+		"feelslike_string":"99 F (37 C)",
+		"feelslike_f":"99",
+		"feelslike_c":"37",
+		"visibility_mi":"6.2",
+		"visibility_km":"10.0",
+		"solarradiation":"--",
+		"UV":"6","precip_1hr_string":"-999.00 in ( 0 mm)",
+		"precip_1hr_in":"-999.00",
+		"precip_1hr_metric":" 0",
+		"precip_today_string":"-999.00 in (-25375 mm)",
+		"precip_today_in":"-999.00",
+		"precip_today_metric":"--",
+		"icon":"mostlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/mostlycloudy.gif",
+		"forecast_url":"http://www.wunderground.com/global/stations/48900.html",
+		"history_url":"http://www.wunderground.com/weatherstation/WXDailyHistory.asp?ID=I65BINHH2",
+		"ob_url":"http://www.wunderground.com/cgi-bin/findweather/getForecast?query=10.820744,106.678703",
+		"nowcast":""
+	}
+}

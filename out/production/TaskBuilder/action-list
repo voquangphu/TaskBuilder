@@ -1,0 +1,88 @@
+#GetFirstNPSeparatedByPP variable-question output
+
+#GetFirstLastNPSeparatedByPP variable-question output
+
+#GetFirstLastNPNotSeparatedByPP variable-question output
+
+#GetMainVP variable-question output
+
+#CombineOutput file1 file2 output
+
+#Test variable-whatever output
+GetFirstLastNPSeparatedByPP variable-whatever output
+GetFirstLastNPNotSeparatedByPP variable-whatever output
+
+#a a1 a2 a3 output
+GetFirstNPSeparatedByPP a1 out1
+GetFirstLastNPSeparatedByPP a2 out2
+GetFirstNPSeparatedByPP a1 out1
+Test a2 output
+GetFirstNPSeparatedByPP a1 out1
+CombineOutput out1 out2 output
+CombineOutput out1 out2 output
+
+#GetDirection in1 in2 out
+Get in1 out1
+Direction in2 out2
+
+#Get in1 out
+
+#Direction in1 out
+
+#GetCurrentTime out
+
+#GeocodeSearch in1 out
+GetAPIJSON https://maps.googleapis.com/maps/api/geocode/json address in1 out1
+FilterJSON out1 lat out2
+FilterJSON out1 lng out3
+CombineOutputMixedLine out2 out3 out
+
+#SearchWikipedia1 in1 out
+SearchWikipedia in1 out
+
+#SearchWikipedia2 in1 out
+SearchWikipedia in1 out
+
+#WriteLog in1 out
+
+#WriteLog1 in1 out
+WriteLog in1 out
+
+#GetPlaceAutoComplete in1 out
+GetAPIJSON https://maps.googleapis.com/maps/api/place/autocomplete/json key AIzaSyD_3zqfoFHYeFHkdDsXR7UwBpY22dXwTxg input in1 out1
+FilterJSON out1 description out2
+ExtractValueJSON out2 out3
+ToList out3 out
+
+#GetGeolookupWUnderground in1 out
+SaveStringToOutput string:http://api.wunderground.com/api/eba177785a6227c7/geolookup/q/ out1
+SaveStringToOutput string:.json out2
+SaveStringToOutput in1 out3
+StringReplace out3 string:" " string:"_" out4
+Concat2Outputs out1 out4 out5
+Concat2Outputs out5 out2 out6
+GetAPIJSON1 out6 out7
+FilterJSONValueOnly out7 string:country_iso3166 out8
+FilterJSONValueOnly out7 string:city out9
+GetFirstLine out8 out10
+GetFirstLine out9 out11
+StringReplace out11 string:" " string:"_" out12
+SaveStringToOutput string:/ out13
+Concat2Outputs out13 out10 out14
+Concat2Outputs out14 out13 out15
+Concat2Outputs out15 out12 out
+
+#GetWeatherCondition in1 out
+GetGeolookupWUnderground in1 out1
+SaveStringToOutput string:http://api.wunderground.com/api/eba177785a6227c7/conditions/q out2
+SaveStringToOutput string:.json out3
+Concat2Outputs out2 out1 out4
+Concat2Outputs out4 out3 out5
+GetAPIJSON1 out5 out6
+FilterJSON out6 string:weather out7
+FilterJSON out6 string:temperature_string out8
+FilterJSON out6 string:relative_humidity out9
+FilterJSON out6 string:wind_string out10
+FilterJSON out6 string:feelslike_string out11
+FilterJSON out6 string:visibility_km out12
+CombineOutput out7 out8 out9 out10 out11 out12 out

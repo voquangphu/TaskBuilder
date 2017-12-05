@@ -1,0 +1,29 @@
+// Relative path to action-list file (required)
+action-list = "action-list"
+
+// Relative path to base directory of actions (required)
+action-base = "actions/"
+
+// Relative path to command file (required)
+command-list = "command-list"
+
+// Relative path to output parsed script (required)
+output-script = "script"
+
+// Relative path to output memory (required)
+memory = "memory/"
+
+// Runtime command (required)
+runtime = "java"
+
+// File extension (required)
+extension = ".class"
+
+// File prefix (append to name taken from command-list)
+prefix = "java:actions."
+
+// File suffix (append to name taken from command-list, default: [file extension])
+suffix = "java:"
+
+// Execution arguments
+argument = "java:-cp /Users/vo-quang-phu/self/ActionBuilder/out/production/ActionBuilder"

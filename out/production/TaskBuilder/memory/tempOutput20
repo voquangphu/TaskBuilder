@@ -1,0 +1,97 @@
+http://api.wunderground.com/api/eba177785a6227c7/geolookup/q/Ho%20Chi%20Minh%20City.json
+
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "geolookup": 1
+  }
+	}
+		,	"location": {
+		"type":"INTLCITY",
+		"country":"VS",
+		"country_iso3166":"VN",
+		"country_name":"Viet Nam",
+		"state":"",
+		"city":"Ho Chi Minh City",
+		"tz_short":"+07",
+		"tz_long":"Asia/Ho_Chi_Minh",
+		"lat":"10.77999973",
+		"lon":"106.69000244",
+		"zip":"00000",
+		"magic":"116",
+		"wmo":"48900",
+		"l":"/q/zmw:00000.116.48900",
+		"requesturl":"global/stations/48900.html",
+		"wuiurl":"https://www.wunderground.com/global/stations/48900.html",
+		"nearby_weather_stations": {
+		"airport": {
+		"station": [
+		{ "city":"", "state":"", "country":"", "icao":"", "lat":"", "lon":"" }
+		,{ "city":"Ho Chi Minh", "state":"", "country":"VN", "icao":"VVTS", "lat":"10.81999969", "lon":"106.66999817" }
+		]
+		}
+		,
+		"pws": {
+		"station": [
+		{
+		"neighborhood":"Ho Chi Minh",
+		"city":"Binh Hoa Xa",
+		"state":"65",
+		"country":"VS",
+		"id":"I65BINHH2",
+		"lat":10.820744,
+		"lon":106.678703,
+		"distance_km":4,
+		"distance_mi":2
+		},
+		{
+		"neighborhood":"Hưng Long Nam",
+		"city":"Ho Chi Minh City",
+		"state":"",
+		"country":"VN",
+		"id":"IHOCHIMI6",
+		"lat":10.716750,
+		"lon":106.726257,
+		"distance_km":8,
+		"distance_mi":4
+		},
+		{
+		"neighborhood":"Ho Chi Minh",
+		"city":"Tang Nhon Phu",
+		"state":"65",
+		"country":"VS",
+		"id":"I65TANGN2",
+		"lat":10.825086,
+		"lon":106.775917,
+		"distance_km":10,
+		"distance_mi":6
+		},
+		{
+		"neighborhood":"Ho Chi Minh",
+		"city":"Linh Xuan",
+		"state":"",
+		"country":"VS",
+		"id":"ILINHXUA2",
+		"lat":10.855750,
+		"lon":106.785942,
+		"distance_km":13,
+		"distance_mi":8
+		},
+		{
+		"neighborhood":"Ho Chi Minh",
+		"city":"Ap Trang",
+		"state":"",
+		"country":"VS",
+		"id":"IAPTRANG2",
+		"lat":10.974371,
+		"lon":106.488571,
+		"distance_km":30,
+		"distance_mi":18
+		}
+		]
+		}
+		}
+	}
+}

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="ActionBuilder:jar">
+    <output-path>$PROJECT_DIR$/directory</output-path>
+    <root id="archive" name="TaskBuilder.jar">
+      <element id="module-output" name="TaskBuilder" />
+    </root>
+  </artifact>
+</component>
