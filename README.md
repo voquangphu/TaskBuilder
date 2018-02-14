@@ -27,3 +27,16 @@ A framework for building complex programs based upon more simple well-defined on
   * <i>memory</i> folder: where task builder generates and stores temporary files and output files.
 
 ## Configuration
+* Files and folders (all locations are relative path)
+  * <i>action-map</i> file
+  * <i>command-list</i> file
+  * <i>action-base</i> folder
+  * <i>output-script</i> file
+  * <i>action-base</i> folder
+  * <i>memory</i> folder
+* Runtime configuration
+  * <i>runtime</i>: bash command to execute binary files, multiple commands can be supported (i.e. java|python)
+  * <i>extension</i>: corresponding file extension to be executed by <i>runtime</i> (i.e. .class|.py)
+  * <i>prefix</i>: optional prefix to be added to filename for execution (i.e. java:actions.|python:)
+  * <i>prefix</i>: optional suffix to be added to filename for execution (i.e. java:|python:)
+  * <i>argument</i>: arguments for execution (i.e. java:-cp /srv/production/TaskBuilder|python:)
