@@ -7,7 +7,7 @@ import java.util.StringTokenizer;
 public class Config {
 
     private String currentPath;
-    private String actionListPath;
+    private String actionMapPath;
     private String actionPath;
     private String commandListPath;
     private String outputPath;
@@ -37,8 +37,8 @@ public class Config {
             if(line.startsWith("//")) {
                 continue;
             }
-            if(line.startsWith("action-list")) {
-                setActionListPath(line.substring(line.indexOf("\"") + 1, line.lastIndexOf("\"")));
+            if(line.startsWith("action-map")) {
+                setActionMapPath(line.substring(line.indexOf("\"") + 1, line.lastIndexOf("\"")));
             }
             if(line.startsWith("action-base")) {
                 setActionPath(line.substring(line.indexOf("\"") + 1, line.lastIndexOf("\"")));
@@ -76,7 +76,7 @@ public class Config {
     }
 
     public String getActionListPath() {
-        return actionListPath;
+        return actionMapPath;
     }
 
     public String getActionPath() {
@@ -117,7 +117,7 @@ public class Config {
 
     private boolean validatePath() {
         boolean validate = true;
-        File actionList = new File(actionListPath);
+        File actionList = new File(actionMapPath);
         if(!actionList.exists() || !actionList.isFile()) {
             validate = false;
         }
@@ -145,8 +145,8 @@ public class Config {
         return validate;
     }
 
-    private void setActionListPath(String path) {
-        actionListPath = currentPath + "/" + path;
+    private void setActionMapPath(String path) {
+        actionMapPath = currentPath + "/" + path;
     }
 
     private void setActionPath(String path) {

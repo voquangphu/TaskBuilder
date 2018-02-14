@@ -1,5 +1,5 @@
 // Relative path to action-list file (required)
-action-list = "action-list"
+action-map = "action-map"
 
 // Relative path to base directory of actions (required)
 action-base = "actions/"
