@@ -33,7 +33,7 @@ A framework for building complex programs based upon more simple well-defined on
   * <i>action-base</i> folder
   * <i>output-script</i> file
   * <i>action-base</i> folder
-  * <i>memory</i> folder
+  * <i>memory</i> folder
 * Runtime configuration
   * <i>runtime</i>: bash command to execute binary files, multiple commands can be supported (i.e. java|python)
   * <i>extension</i>: corresponding file extension to be executed by <i>runtime</i> (i.e. .class|.py)
