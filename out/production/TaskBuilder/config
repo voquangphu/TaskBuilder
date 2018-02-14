@@ -19,11 +19,11 @@ runtime = "java"
 // File extension (required)
 extension = ".class"
 
-// File prefix (append to name taken from command-list)
+// File prefix (append to name taken from action-map)
 prefix = "java:actions."
 
-// File suffix (append to name taken from command-list, default: [file extension])
+// File suffix (append to name taken from action-map, default: [file extension])
 suffix = "java:"
 
-// Execution arguments
+// Execution arguments (required)
 argument = "java:-cp /Users/vo-quang-phu/self/ActionBuilder/out/production/ActionBuilder"
