@@ -36,7 +36,7 @@ A framework for building complex programs based upon more simple well-defined on
   * <i>memory</i> folder
 * Runtime configuration
   * <i>runtime</i>: bash command to execute binary files, multiple commands can be supported (i.e. java|python)
-  * <i>extension</i>: corresponding file extension to be executed by <i>runtime</i> (i.e. .class|.py)
+  * <i>extension</i>: corresponding file extension to be searched for execution <i>runtime</i> (i.e. .class|.py)
   * <i>prefix</i>: optional prefix to be added to filename for execution (i.e. java:actions.|python:)
-  * <i>prefix</i>: optional suffix to be added to filename for execution (i.e. java:|python:)
+  * <i>suffix</i>: optional parameter, used to change file extension for execution, i.e. Java .class file can only be executed using class name only, so .class is not needed and this option could be used to set execution to remove .class in execution script (i.e. java:|python:.py)
   * <i>argument</i>: arguments for execution (i.e. java:-cp /srv/production/TaskBuilder|python:)
