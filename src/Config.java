@@ -224,6 +224,9 @@ public class Config {
         try {
             currentPath = new File(Main.class.getProtectionDomain().getCodeSource().getLocation().toURI().getPath()).getAbsolutePath();
             currentPath = getPathWithoutTail(currentPath);
+            if(currentPath.endsWith(".jar")) {
+                currentPath = currentPath.substring(0, currentPath.lastIndexOf("/"));
+            }
         } catch (URISyntaxException e) {
             e.printStackTrace();
         }
